@@ -1,0 +1,116 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  color: white;
+}
+
+body {
+  background: #1a1924;
+}
+
+.wrapper {
+  padding: 2.4rem 3.2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.chat {
+  color: #e1e1e6;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  color: #00b37e;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
+header img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+header button {
+  margin-left: 15rem;
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat p {
+  padding: 1.4rem;
+  border-radius: 2rem;
+}
+
+.chat p:nth-child(1),
+.chat p + p {
+  margin-bottom: 4rem;
+}
+
+.he {
+  width: min(60%, 30rem);
+  background: #633bbc;
+}
+
+.me {
+  margin-left: 70%;
+  width: fit-content;
+
+  background: #07847e;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+footer input {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+
+  padding: 1.4rem 2.4rem;
+  border-radius: 99999px;
+  border: none;
+  width: 100%;
+  background: #282843;
+  color: white;
+}
+
+footer svg {
+  width: 7rem;
+  position: relative;
+  left: min(19rem, 30rem);
+  top: -3.3rem;
+}
