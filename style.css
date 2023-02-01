@@ -20,7 +20,7 @@ body {
   padding: 2.4rem 3.2rem;
 }
 
-header {
+.headerWarppe {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +42,7 @@ header {
 }
 
 h1 {
-  color: white;
+  color: #e1e1e6;
   margin-bottom: 0.4rem;
 }
 
@@ -51,6 +51,17 @@ header img {
   height: 8rem;
   object-fit: cover;
   border-radius: 50%;
+}
+
+header {
+  margin-bottom: 6rem;
+}
+
+header p {
+  margin-top: 2.6rem;
+  font-size: 1.2rem;
+  color: #e1e1e6;
+  text-align: center;
 }
 
 header button {
@@ -89,6 +100,10 @@ header button {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
+  left: -0.1rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
