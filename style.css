@@ -79,7 +79,6 @@ header button {
 
 .chat p {
   padding: 1.4rem;
-  border-radius: 2rem;
 }
 
 .chat p:nth-child(1),
@@ -90,13 +89,15 @@ header button {
 .he {
   width: min(60%, 30rem);
   background: #633bbc;
+  border-radius: 0px 8px 8px 8px;
 }
 
 .me {
-  margin-left: 70%;
-  width: fit-content;
+  margin-left: auto;
+  width: min(60%, 30rem);
 
   background: #07847e;
+  border-radius: 8px 8px 0px 8px;
 }
 
 footer {
@@ -108,24 +109,37 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 3.2rem;
 }
 
-footer input {
+footer form input {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.4rem;
+  background: transparent;
+  width: 100%;
 
   padding: 1.4rem 2.4rem;
-  border-radius: 99999px;
   border: none;
-  width: 100%;
-  background: #282843;
   color: white;
+  outline: none;
 }
 
-footer svg {
-  width: 7rem;
-  position: relative;
-  left: min(19rem, 30rem);
-  top: -3.3rem;
+footer form:focus-within {
+  outline: 2px solid white;
+}
+
+footer form {
+  display: flex;
+  align-items: center;
+  width: 90%;
+
+  border-radius: 99999px;
+  background: #282843;
+  padding-inline: 1.6rem;
+}
+
+footer form button {
+  background: transparent;
+  border: none;
 }
