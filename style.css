@@ -37,6 +37,7 @@ body {
 
 .status {
   display: flex;
+  gap: 2px;
   align-items: center;
   color: #00b37e;
 }
@@ -49,8 +50,9 @@ h1 {
 header img {
   width: 8rem;
   height: 8rem;
+  aspect-ratio: 1/1;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 99999px;
 }
 
 header {
@@ -65,7 +67,7 @@ header p {
 }
 
 header button {
-  margin-left: 15rem;
+  margin-left: auto;
   appearance: none;
   background: transparent;
   border: none;
@@ -142,4 +144,16 @@ footer form {
 footer form button {
   background: transparent;
   border: none;
+}
+
+@media (min-width: 900px) {
+  .wrapper {
+    max-width: 110rem;
+    margin-inline: auto;
+  }
+
+  footer form {
+    max-width: 110rem;
+    align-items: center;
+  }
 }
